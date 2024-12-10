@@ -10,11 +10,16 @@ Output: [1, 2, 5, 10]
 */
 public static ArrayList<Integer> getAllDivisors(int n){
 		// Write your code here.
+		n=Math.abs(n);
 		ArrayList<Integer> result = new ArrayList<>();
-		for(int i=1;i<=n;i++){
+		for(int i=1;i*i<=n;i++){
 			if(n%i==0){
 				result.add(i);
+				if(i!=n/i){
+					result.add(n/i);
+				}
 			} 
 		}
+		Collections.sort(result);
 		return result;
 	}
