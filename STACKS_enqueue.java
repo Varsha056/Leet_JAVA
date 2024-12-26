@@ -37,7 +37,13 @@ public class MyQueue {
                 stack1.push(stack2.pop());
             }
     }
-    
+    ---------------------------- dequeue ------------------------------------------
+     public Integer dequeue(){
+        if(stack1.isEmpty()) return null;
+        return stack1.pop();
+    }
+
+
     public int peek() {
         return stack1.peek();
     }
