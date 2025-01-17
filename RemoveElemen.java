@@ -1,3 +1,12 @@
+/*
+Input:
+
+nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+
+val = 1
+
+Output: The new length of the array should be 7, and the array itself should look like this after modification: [-2, -3, 4, -1, 2, -5, 4, -5, 4]
+*/
 public static int removeElement(int[] nums, int val) {
     // Initialize index i for writing elements in the array
     int i = 0;
